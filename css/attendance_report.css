@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    padding:30px;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+h2{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:25px;
+    font-size:34px;
+}
+
+form{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-bottom:25px;
+    flex-wrap:wrap;
+}
+
+input[type="month"]{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:#fff;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#2563eb;
+    color:#fff;
+    padding:12px;
+    border:1px solid #ddd;
+}
+
+table td{
+    padding:12px;
+    text-align:center;
+    border:1px solid #ddd;
+}
+
+table tr:nth-child(even){
+    background:#f8fafc;
+}
+
+.signature-section{
+    display:flex;
+    justify-content:space-between;
+    margin-top:70px;
+    text-align:center;
+}
+
+.sign{
+    width:30%;
+    font-weight:bold;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 22px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.back-btn:hover{
+    background:#1d4ed8;
+}
+
+.theme-toggle{
+    position:fixed;
+    top:20px;
+    right:20px;
+    padding:12px 20px;
+    border:none;
+    border-radius:30px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+}
+
+@media print{
+
+    body{
+        background:white;
+        padding:0;
+    }
+
+    .theme-toggle,
+    form,
+    .back-btn{
+        display:none;
+    }
+
+    .container{
+        box-shadow:none;
+        border:none;
+        width:100%;
+        max-width:100%;
+    }
+
+    table{
+        font-size:14px;
+    }
+
+    .signature-section{
+        margin-top:80px;
+    }
+}
+
+.print-btn{
+    background:#16a34a;
+    color:#fff;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.print-btn:hover{
+    background:#15803d;
+}

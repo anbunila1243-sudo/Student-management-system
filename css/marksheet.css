@@ -1,0 +1,246 @@
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f7fc;
+    padding:30px;
+}
+
+.marksheet{
+    width:800px;
+    margin:10px auto;
+    padding:20px;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+h1{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:25px;
+}
+
+.student-info{
+    margin:15px 0;
+}
+
+.student-info p{
+    margin:8px 0;
+    padding:8px 0;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+th,td{
+    padding:8px;
+    text-align:center;
+}
+
+.buttons{
+    margin-top:20px;
+    text-align:center;
+}
+
+.buttons button,
+.buttons a{
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    text-decoration:none;
+    background:#2563eb;
+    color:#fff;
+    margin:5px;
+    cursor:pointer;
+}
+
+.signature-section{
+    margin-top:25px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.signature-section div{
+    width:30%;
+    text-align:center;
+}
+
+th:nth-child(4),
+td:nth-child(4){
+    width:220px;
+}
+/* Student Information Box */
+
+.student-info{
+    background:#f8fbff;
+    border:2px solid #020409;
+    border-radius:12px;
+    padding:20px;
+    margin:25px 0;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.info-row{
+    display:flex;
+    padding:12px 0;
+    border-bottom:1px solid #dbeafe;
+}
+
+.info-row:last-child{
+    border-bottom:none;
+}
+
+.label{
+    width:180px;
+    font-weight:700;
+    color:#2563eb;
+    font-size:17px;
+}
+
+.label::after{
+    content:" :";
+}
+
+.value{
+    flex:1;
+    font-size:17px;
+    color:#222;
+    font-weight:500;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+    border-bottom:3px solid #2563eb;
+    padding-bottom:15px;
+}
+
+.logo img{
+    width:90px;
+    height:90px;
+}
+
+.photo img{
+    width:90px;
+    height:90px;
+    border-radius:10px;
+    border:2px solid #2563eb;
+    object-fit:cover;
+}
+
+.college-details{
+    text-align:center;
+    flex:1;
+}
+
+.college-details h2{
+    color:#0f172a;
+    margin:0;
+    font-size:28px;
+}
+
+.college-details p{
+    color:#555;
+    margin:6px 0;
+    font-size:16px;
+}
+
+.college-details h1{
+    color:#2563eb;
+    margin-top:10px;
+    font-size:38px;
+}
+@page{
+    size:A4 portrait;
+    margin:8mm;
+}
+
+@media print{
+
+html,body{
+    width:210mm;
+    height:297mm;
+    overflow:hidden;
+    background:#fff;
+}
+
+.marksheet{
+    width:100%;
+    margin:0;
+    padding:12px 18px;
+    box-shadow:none;
+    border:none;
+}
+
+/* Reduce spacing */
+h1{
+    font-size:36px;
+    margin:6px 0;
+}
+
+.student-info{
+    margin:12px 0;
+}
+
+.student-info p{
+    margin:4px 0;
+    padding:8px 0;
+    font-size:18px;
+}
+
+table{
+    margin-top:10px;
+}
+
+table th,
+table td{
+    padding:8px;
+    font-size:16px;
+}
+
+/* Signature */
+.signature-section{
+    margin-top:18px;
+}
+
+/* Hide buttons */
+.buttons{
+    display:none;
+}
+
+/* Don't split table */
+table,
+tr,
+td,
+th{
+    page-break-inside:avoid;
+}
+
+@media print{
+table{
+    width:100%;
+    border-collapse:collapse;
+    border:2px solid #000;
+    margin-top:20px;
+}
+
+table th{
+    border:1px solid #000;
+    background:#2563eb;
+    color:#fff;
+    padding:10px;
+    text-align:center;
+}
+
+table td{
+    border:1px solid #000;
+    padding:10px;
+    text-align:center;
+}
+}
+
+}
